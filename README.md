@@ -1,2 +1,26 @@
 # vue-travel
-（慕课）Vue2.5开发去哪儿网App 从零基础入门到实战项目
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
