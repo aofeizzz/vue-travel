@@ -1,10 +1,15 @@
 <template>
-    <div>Home</div>
+    <div>{{text}}</div>
 </template>
 
 <script>
     export default {
-        name: 'home'
+        name: 'home',
+        data () {
+            return {
+                text: '首页'
+            }
+        }
     }
 </script>
 
