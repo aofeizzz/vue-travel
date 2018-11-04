@@ -1,14 +1,31 @@
 <template>
     <div class="header">
-        <div class="header-left">返回</div>
-        <div class="header-input">输入城市/景点/游玩主题</div>
-        <div class="header-right">城市</div>
+        <div class="header-left">
+            <div class="iconfont back-icon">&#xe624;</div>
+        </div>
+        <div class="header-input">
+            <span class="iconfont">&#xe632;</span> 输入城市/景点/游玩主题
+        </div>
+        <div class="header-right">
+            <i-button @click="show">Click me!</i-button>
+            <Modal v-model="visible" title="Welcome">Welcome to iView</Modal>
+        </div>
     </div>
 </template>
 
 <script>
     export default {
-        name: 'home-header'
+        name: 'home-header',
+        data () {
+            return {
+                visible: false
+            }
+        },
+        methods: {
+            show: function () {
+                this.visible = true
+            }
+        }
     }
 </script>
 
@@ -25,20 +42,25 @@
         也就是说设计图出来的宽度 直接除于100就是rem了
 -->
 <style lang="stylus" scoped>
+    @import "~@/assets/styles/varibles.styl"
     .header
         display: flex
         line-height: .86rem
-        background: #00bcd4
+        background: $bgColor
         color: #fff
         .header-left
             width: .64rem
             float: left
+            .back-icon
+                text-align: center
+                font-size: .4rem
         .header-input
             flex: 1
             height: .64rem
             line-height: .64rem
             margin-top: .12rem
             margin-left: .2rem
+            padding-left: .2rem
             background: #fff
             color: #ccc
             border-radius: .1rem
