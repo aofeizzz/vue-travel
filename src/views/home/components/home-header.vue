@@ -7,7 +7,11 @@
             <span class="iconfont">&#xe632;</span> 输入城市/景点/游玩主题
         </div>
         <div class="header-right">
+<<<<<<< HEAD
             城市 <span class="iconfont">&#xe6aa;</span>
+=======
+            城市<span class="iconfont">&#xe6aa;</span>
+>>>>>>> index-swiper
         </div>
     </div>
 </template>
@@ -15,16 +19,6 @@
 <script>
     export default {
         name: 'home-header',
-        data () {
-            return {
-                visible: false
-            }
-        },
-        methods: {
-            show: function () {
-                this.visible = true
-            }
-        }
     }
 </script>
 
