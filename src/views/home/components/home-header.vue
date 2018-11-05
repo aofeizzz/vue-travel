@@ -7,8 +7,7 @@
             <span class="iconfont">&#xe632;</span> 输入城市/景点/游玩主题
         </div>
         <div class="header-right">
-            <i-button @click="show">Click me!</i-button>
-            <Modal v-model="visible" title="Welcome">Welcome to iView</Modal>
+            城市 <span class="iconfont">&#xe6aa;</span>
         </div>
     </div>
 </template>
