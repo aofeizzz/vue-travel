@@ -9,6 +9,7 @@
                     <p class="icon-title">{{item.title}}</p>
                 </div>
             </swiper-slide>
+            <div class="swiper-pagination" slot="pagination"></div>
         </swiper>
     </div>
 </template>
@@ -19,7 +20,9 @@
         data () {
             return {
                 swiperOption: {
-                    autoplay: false
+                    autoplay: false,
+                    pagination: '.swiper-pagination',
+                    loop: true
                 },
                 icons: [
                     {
@@ -105,10 +108,10 @@
         overflow: hidden
         float: left
         width: 25%
-        padding-bottom: 25%
+        padding-bottom: 20%
         .icon-img
             position: absolute
-            top: 25%
+            top: 5%
             left: 22%
             right: 0
             bottom: .44rem
