@@ -23,6 +23,23 @@
             HomeIcons,
             HomeSwiper,
             HomeHeader
+        },
+        data () {
+            return {}
+        },
+        mounted () {
+            this.getHomeInfo()
+        },
+        methods: {
+            getHomeInfo () {
+                this.$axios.get('/api/home').then((res) => {
+                    console.log(res.data.data.data)
+                }).catch((res) => {
+                    console.log(res)
+                }).finally(() => {
+                    console.log('finally')
+                })
+            }
         }
     }
 </script>
