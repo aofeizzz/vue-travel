@@ -68,7 +68,7 @@
         display: flex
         height: 1.9rem
         .item-img
-            widows: 1.7rem
+            width: 1.7rem
             height: 1.7rem
             padding: .1rem
         .item-info
