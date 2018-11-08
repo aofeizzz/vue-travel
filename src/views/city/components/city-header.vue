@@ -17,8 +17,8 @@
     @import "~@/assets/styles/varibles"
     .header
         overflow: hidden
-        height: .86rem
-        line-height: .86rem
+        height: $headerHeight
+        line-height: $headerHeight
         text-align: center
         color: #fff
         background: $bgColor
