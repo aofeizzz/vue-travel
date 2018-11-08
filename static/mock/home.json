@@ -1,133 +1,159 @@
 {
     "status": 0,
     "data"  : {
+        "city"         : "深圳",
         "swiperList"   : [
             {
                 "id" : "0001",
-                "img": "http://img1.qunarzz.com/piao/fusion/1801/1a/94428c6dea109402.jpg_640x200_2cf590d8.jpg"
+                "img": "http://img1.qunarzz.com/piao/fusion/1811/1b/4143c7e0bfe78d02.jpg_750x200_5a220f6e.jpg"
             },
             {
                 "id" : "0002",
-                "img": "http://img1.qunarzz.com/piao/fusion/1802/42/7c92b9a381e46402.jpg_640x200_1cdce2a4.jpg"
+                "img": "http://img1.qunarzz.com/piao/fusion/1809/c6/2467595fffc3b302.jpg_750x200_cca13d51.jpg"
             },
             {
                 "id" : "0003",
-                "img": "http://img1.qunarzz.com/piao/fusion/1802/51/e78f936a5b404102.jpg_640x200_c14f0b3a.jpg"
+                "img": "http://img1.qunarzz.com/piao/fusion/1809/31/da037478f37cf202.jpg_750x200_a02cf862.jpg"
             },
             {
                 "id" : "0004",
-                "img": "http://img1.qunarzz.com/piao/fusion/1712/91/a275569091681d02.jpg_640x200_0519ccb9.jpg"
+                "img": "http://img1.qunarzz.com/piao/fusion/1810/eb/5cacf42b59e91e02.jpg_750x200_9c0a77b0.jpg"
+            },
+            {
+                "id" : "0005",
+                "img": "http://img1.qunarzz.com/piao/fusion/1810/a8/664024556572fd02.jpg_750x200_ffe41025.jpg"
+            },
+            {
+                "id" : "0006",
+                "img": "http://img1.qunarzz.com/piao/fusion/1809/61/44400d6591891202.jpg_750x200_7565a05c.jpg"
+            },
+            {
+                "id" : "0007",
+                "img": "http://img1.qunarzz.com/piao/fusion/1811/d4/7fa0b173c269f802.jpg_750x200_b8d88f51.jpg"
+            },
+            {
+                "id" : "0008",
+                "img": "http://img1.qunarzz.com/piao/fusion/1809/62/04400e9b345de002.jpg_750x200_1af72d73.jpg"
+            },
+            {
+                "id" : "0009",
+                "img": "http://img1.qunarzz.com/piao/fusion/1809/ae/7518c2fbc1415202.jpg_750x200_09bbe391.jpg"
             }
         ],
         "iconList"     : [
             {
-                "id"  : "0001",
-                "img" : "http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png",
-                "desc": "景点门票"
+                "id"   : "0001",
+                "title": "景点门票",
+                "img"  : "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png"
             },
             {
-                "id"  : "0002",
-                "img" : "http://img1.qunarzz.com/piao/fusion/1711/df/86cbcfc533330d02.png",
-                "desc": "滑雪季"
+                "id"   : "0002",
+                "title": "深圳必游",
+                "img"  : "http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png"
             },
             {
-                "id"  : "0003",
-                "img" : "http://img1.qunarzz.com/piao/fusion/1710/a6/83f636bd75ae6302.png",
-                "desc": "泡温泉"
+                "id"   : "0003",
+                "title": "一日游",
+                "img"  : "http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png"
             },
             {
-                "id"  : "0004",
-                "img" : "http://img1.qunarzz.com/piao/fusion/1611/35/2640cab202c41b02.png",
-                "desc": "动植园"
+                "id"   : "0004",
+                "title": "文化古迹",
+                "img"  : "http://img1.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png"
             },
             {
-                "id"  : "0005",
-                "img" : "http://img1.qunarzz.com/piao/fusion/1611/d0/e09575e66f4aa402.png",
-                "desc": "游乐园"
+                "id"   : "0005",
+                "title": "动植物园",
+                "img"  : "http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png"
             },
             {
-                "id"  : "0006",
-                "img" : "http://img1.qunarzz.com/piao/fusion/1611/59/569d3c096e542502.png",
-                "desc": "必游榜单"
+                "id"   : "0006",
+                "title": "打卡圣地",
+                "img"  : "https://img1.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png"
             },
             {
-                "id"  : "0007",
-                "img" : "http://img1.qunarzz.com/piao/fusion/1611/17/4bd370f3eb1acd02.png",
-                "desc": "演出"
+                "id"   : "0007",
+                "title": "野生动物园",
+                "img"  : "http://img1.qunarzz.com/piao/fusion/1803/47/c2b659e048b11602.png"
             },
             {
-                "id"  : "0008",
-                "img" : "http://img1.qunarzz.com/piao/fusion/1611/7f/b1ea3c8c7fb6db02.png",
-                "desc": "城市观光"
+                "id"   : "0008",
+                "title": "泡温泉",
+                "img"  : "http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png"
             },
             {
-                "id"  : "0009",
-                "img" : "http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png",
-                "desc": "一日游"
+                "id"   : "0009",
+                "title": "东部华侨城",
+                "img"  : "http://img1.qunarzz.com/piao/fusion/1803/b6/37560ece9c62b502.png"
+            },
+            {
+                "id"   : "0010",
+                "title": "全部玩乐",
+                "img"  : "http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png"
             }
         ],
         "recommendList": [
             {
-                "id"   : "0001",
-                "img"  : "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg",
-                "title": "故宫",
-                "desc" : "东方宫殿建筑代表，世界宫殿建筑典范"
+                "id"   : "001",
+                "title": "深圳欢乐谷",
+                "desc" : "狂欢无罪，够胆你就来！",
+                "img"  : "http://img1.qunarzz.com/sight/p0/1810/22/226c137568f18ac0a3.water.jpg_200x200_81ac3ecf.jpg"
             },
             {
-                "id"   : "0002",
-                "img"  : "http://img1.qunarzz.com/sight/p0/1511/d2/d2aec2dfc5aa771290.water.jpg_140x140_abb362a7.jpg",
-                "title": "南山滑雪场",
-                "desc" : "北京专业级滑雪圣地"
+                "id"   : "002",
+                "title": "世界之窗",
+                "desc" : "一个下午让你走遍全世界~",
+                "img"  : "http://img1.qunarzz.com/sight/p0/1809/87/8796d4dfe0366858a3.water.png_200x200_ca6e25bf.png"
             },
             {
-                "id"   : "0003",
-                "img"  : "http://img1.qunarzz.com/sight/p0/1501/f4/f467729126949c3a.water.jpg_140x140_ef235b1c.jpg",
-                "title": "天安门广场",
-                "desc" : "我爱北京天安门，天安门上太阳升"
+                "id"   : "003",
+                "title": "深圳野生动物园",
+                "desc" : "这里有优雅和呆萌并存的睫毛精",
+                "img"  : "http://img1.qunarzz.com/sight/p0/1508/2e/d9363ce50a88c8c5ff5a138c67687cd4.water.jpg_200x200_1c15c8f5.jpg"
             },
             {
-                "id"   : "0004",
-                "img"  : "http://img1.qunarzz.com/sight/p0/1501/40/40b2b6c951b28fdd.water.jpg_140x140_1c863e5c.jpg",
-                "title": "水立方",
-                "desc" : "中国的荣耀，阳光下的晶莹水滴"
+                "id"   : "004",
+                "title": "锦绣中华民俗村",
+                "desc" : "56个民族56支花~",
+                "img"  : "http://img1.qunarzz.com/sight/p0/1810/ea/eafded52d4c963e5a3.water.png_200x200_34270547.png"
             },
             {
-                "id"   : "0005",
-                "img"  : "http://img1.qunarzz.com/sight/p0/201308/23/b283071686e64dfec8d65eac.jpg_140x140_8c5a7c49.jpg",
-                "title": "温都水城养生馆",
-                "desc" : "各种亚热带植物掩映其间仿佛置身热带雨林"
+                "id"   : "005",
+                "title": "东部华侨城大侠谷",
+                "desc" : "行走峡湾栈道，倾听大自然的天籁之音",
+                "img"  : "http://img1.qunarzz.com/sight/p0/1502/15/15ca1d0eab6bf46c.water.jpg_200x200_50ca7bb1.jpg"
             }
         ],
         "weekendList"  : [
             {
-                "id"   : "0001",
-                "img"  : "http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg",
-                "title": "北京温泉排行榜",
-                "desc" : "细数北京温泉，温暖你的冬天"
+                "id"   : "001",
+                "title": "粤东泡汤好去处",
+                "desc" : "全时四季的温泉，度假的天堂",
+                "img"  : "http://img1.qunarzz.com/sight/source/1505/b9/f9d8ace21c06.jpg_r_640x214_1f239a81.jpg"
             },
             {
-                "id"   : "0002",
-                "img"  : "http://img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg",
-                "title": "北京必游TOP10",
-                "desc" : "来北京必去的景点非这些地方莫属"
+                "id"   : "002",
+                "title": "深圳必游TOP10",
+                "desc" : "来到深圳，你需要来这里签到",
+                "img"  : "http://img1.qunarzz.com/sight/source/1505/fa/ca65fde9677de2.jpg_r_640x214_4500e3ff.jpg"
             },
             {
-                "id"   : "0003",
-                "img"  : "http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg",
-                "title": "寻找北京的皇城范儿",
-                "desc" : "数百年的宫廷庙宇，至今依旧威严霸气"
+                "id"   : "003",
+                "title": "欢乐长隆",
+                "desc" : "世界欢乐汇聚长隆",
+                "img"  : "http://img1.qunarzz.com/sight/source/1602/88/bf120edeaea383.jpg_r_640x214_f8591f7b.jpg"
             },
             {
-                "id"   : "0004",
-                "img"  : "http://img1.qunarzz.com/sight/source/1505/ce/bc89bc2f0e33ea.jpg_r_640x214_3e408453.jpg",
-                "title": "学生最爱的博物馆",
-                "desc" : "周末干嘛？北京很多博物馆已经免费开放啦"
+                "id"   : "004",
+                "title": "当地人秋游",
+                "desc" : "当地人带你发现不一样的深圳，在这个秋天",
+                "img"  : "http://img1.qunarzz.com/sight/source/1507/d9/2ddc7652fdba16.jpg_r_640x214_5e62f1a3.jpg"
             },
             {
-                "id"   : "0005",
-                "img"  : "http://img1.qunarzz.com/sight/source/1505/b2/fde1bfcd057a52.jpg_r_640x214_bbf3fa44.jpg",
-                "title": "儿童剧场，孩子的乐园",
-                "desc" : "带宝贝观看演出，近距离体验艺术的无穷魅力"
+                "id"   : "005",
+                "title": "周末亲子游",
+                "desc" : "这个周末就开启美妙的亲子时光",
+                "img"  : "http://img1.qunarzz.com/sight/source/1505/69/e899202f7abddf.jpg_r_640x214_81b6b528.jpg"
             }
         ]
     }

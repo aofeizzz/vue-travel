@@ -1,10 +1,10 @@
 <template>
     <div>
-        <home-header></home-header>
-        <home-swiper></home-swiper>
-        <home-icons></home-icons>
-        <home-recommend></home-recommend>
-        <home-weekend></home-weekend>
+        <home-header v-model="info.city"></home-header>
+        <home-swiper v-model="info.swiper"></home-swiper>
+        <home-icons v-model="info.icons"></home-icons>
+        <home-recommend v-model="info.recommend"></home-recommend>
+        <home-weekend v-model="info.weekend"></home-weekend>
     </div>
 </template>
 
@@ -25,7 +25,15 @@
             HomeHeader
         },
         data () {
-            return {}
+            return {
+                info: {
+                    city: '',
+                    swiper: [],
+                    icons: [],
+                    recommend: [],
+                    weekend: []
+                }
+            }
         },
         mounted () {
             this.getHomeInfo()
@@ -33,11 +41,16 @@
         methods: {
             getHomeInfo () {
                 this.$axios.get('/api/home').then((res) => {
-                    console.log(res.data.data.data)
+                    let _data = res.data.data.data
+                    this.info.city = _data.city
+                    this.info.swiper = _data.swiperList
+                    this.info.icons = _data.iconList
+                    this.info.recommend = _data.recommendList
+                    this.info.weekend = _data.weekendList
                 }).catch((res) => {
                     console.log(res)
                 }).finally(() => {
-                    console.log('finally')
+                    console.log(this.info)
                 })
             }
         }

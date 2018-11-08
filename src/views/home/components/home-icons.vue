@@ -17,77 +17,35 @@
 <script>
     export default {
         name: 'home-icons',
+        props: {
+            value: {
+                type: Array,
+                required: true
+            }
+        },
         data () {
             return {
                 swiperOption: {
-                    autoplay: false,
-                    pagination: '.swiper-pagination',
-                    loop: true
+                    pagination: '.swiper-pagination'
                 },
-                icons: [
-                    {
-                        id: '001',
-                        title: '景点门票',
-                        img: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png'
-                    },
-                    {
-                        id: '002',
-                        title: '北京必玩',
-                        img: 'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png'
-                    },
-                    {
-                        id: '003',
-                        title: '一日游',
-                        img: 'http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png'
-                    },
-                    {
-                        id: '004',
-                        title: '文化古迹',
-                        img: 'http://img1.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png'
-                    },
-                    {
-                        id: '005',
-                        title: '动植物园',
-                        img: 'http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png'
-                    },
-                    {
-                        id: '006',
-                        title: '打卡圣地',
-                        img: 'https://img1.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png'
-                    },
-                    {
-                        id: '007',
-                        title: '野生动物园',
-                        img: 'http://img1.qunarzz.com/piao/fusion/1803/47/c2b659e048b11602.png'
-                    },
-                    {
-                        id: '008',
-                        title: '泡温泉',
-                        img: 'http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png'
-                    },
-                    {
-                        id: '009',
-                        title: '东部华侨城',
-                        img: 'http://img1.qunarzz.com/piao/fusion/1803/b6/37560ece9c62b502.png'
-                    },
-                    {
-                        id: '010',
-                        title: '全部玩乐',
-                        img: 'http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png'
-                    }
-                ]
+                publicValue: this.value
             }
         },
         computed: {
             pages () {
                 const pages = []
-                this.icons.forEach((item, index) => {
+                this.publicValue.forEach((item, index) => {
                     const page = Math.floor(index / 8)
                     if (!pages[page])
                         pages[page] = []
                     pages[page].push(item)
                 })
                 return pages
+            }
+        },
+        watch: {
+            value (val) {
+                this.publicValue = val
             }
         }
     }
