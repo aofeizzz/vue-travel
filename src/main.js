@@ -6,8 +6,8 @@ import fastClick        from 'fastclick' // 解决移动端click 300ms延迟的�
 import VueAwesomeSwiper from 'vue-awesome-swiper' // 轮播图
 import 'swiper/dist/css/swiper.css'
 import iView            from 'iview' // iView
-import axios            from 'axios'
 import 'iview/dist/styles/iview.css'
+import axios            from 'axios'
 import './assets/styles/reset.css' // 重置页面样式表，把不同手机初始化样式统一
 import './assets/styles/border.css' // 解决移动端1px边框的问题
 import './assets/styles/iconfont.css'
