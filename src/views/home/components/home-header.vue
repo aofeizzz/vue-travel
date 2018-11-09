@@ -6,11 +6,9 @@
         <div class="header-input">
             <span class="iconfont">&#xe632;</span> 输入城市/景点/游玩主题
         </div>
-        <router-link to="/city">
-            <div class="header-right">
-                {{publicValue}} <span class="iconfont">&#xe6aa;</span>
-            </div>
-        </router-link>
+        <div class="header-right" @click="goto('/city')">
+            {{publicValue}} <span class="iconfont">&#xe6aa;</span>
+        </div>
     </div>
 </template>
 
@@ -26,6 +24,11 @@
         data () {
             return {
                 publicValue: this.value
+            }
+        },
+        methods: {
+            goto (name) {
+                this.$router.push(name)
             }
         },
         watch: {

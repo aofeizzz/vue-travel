@@ -12,14 +12,21 @@
             <div class="area">
                 <div class="title border-topbottom">热门城市</div>
                 <div class="button-list">
-                    <div class="button-wrapper" v-for="item of publicValue" :key="item.id">
+                    <div class="button-wrapper"
+                         v-for="item of publicValue"
+                         :key="item.id">
                         <div class="button">{{item.name}}</div>
                     </div>
                 </div>
             </div>
-            <div class="area" v-for="(items, key) of publicCities" :key="key">
+            <div class="area"
+                 v-for="(items, key) of publicCities"
+                 :key="key"
+                 :ref="key">
                 <div class="title border-topbottom">{{key}}</div>
-                <div class="item-list" v-for="item of items" :key="item.id">
+                <div class="item-list"
+                     v-for="item of items"
+                     :key="item.id">
                     <div class="item border-bottom">{{item.name}}</div>
                 </div>
             </div>
@@ -40,7 +47,8 @@
             cities: {
                 type: Object,
                 required: true
-            }
+            },
+            letter: String
         },
         data () {
             return {
@@ -49,7 +57,7 @@
             }
         },
         mounted () {
-            this.scoll = new Bscroll(this.$refs.wrapper)
+            this.scroll = new Bscroll(this.$refs.wrapper)
         },
         watch: {
             value (val) {
@@ -57,6 +65,13 @@
             },
             cities (val) {
                 this.publicCities = val
+            },
+            letter (val) {
+                if (val) {
+                    const element = this.$refs[val][0]
+                    // scrollToElement 方法：滚动到的目标元素
+                    this.scroll.scrollToElement(element)
+                }
             }
         }
     }

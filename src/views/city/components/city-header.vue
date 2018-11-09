@@ -1,15 +1,18 @@
 <template>
     <div class="header">
         城市选择
-        <router-link to="/">
-            <div class="iconfont header-back">&#xe624;</div>
-        </router-link>
+        <div class="iconfont header-back" @click="goto('/')">&#xe624;</div>
     </div>
 </template>
 
 <script>
     export default {
-        name: 'city-header'
+        name: 'city-header',
+        methods: {
+            goto (name) {
+                this.$router.push(name)
+            }
+        }
     }
 </script>
 

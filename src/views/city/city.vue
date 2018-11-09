@@ -2,8 +2,15 @@
     <div>
         <city-header></city-header>
         <city-search></city-search>
-        <city-list v-model="info.hotCities" :cities="info.cities"></city-list>
-        <city-alphabet v-model="info.cities"></city-alphabet>
+        <city-list v-model="info.hotCities"
+                   :cities="info.cities"
+                   :letter="info.letter">
+        
+        </city-list>
+        <city-alphabet v-model="info.cities"
+                       @change="handleLetterChange">
+        
+        </city-alphabet>
     </div>
 </template>
 
@@ -25,7 +32,8 @@
             return {
                 info: {
                     hotCities: [],
-                    cities: {}
+                    cities: {},
+                    letter: ''
                 }
             }
         },
@@ -43,6 +51,9 @@
                 }).finally(() => {
                     console.log(this.info)
                 })
+            },
+            handleLetterChange (letter) {
+                this.info.letter = letter
             }
         }
     }
