@@ -53,6 +53,7 @@
             handleTouchMove (e) {
                 if (this.touchStatus) {
                     // 函数节流
+                    // 当时间间隔超过 3s 时，则执行一次函数，这样做到了不重复调用，又能保证3秒执行一次。
                     const current = new Date()
                     this.timer && clearTimeout(this.timer)
                     if (current - this.start >= 3000) {
