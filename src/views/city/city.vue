@@ -1,7 +1,7 @@
 <template>
     <div>
         <city-header></city-header>
-        <city-search></city-search>
+        <city-search v-model="info.cities"></city-search>
         <city-list v-model="info.hotCities"
                    :cities="info.cities"
                    :letter="info.letter">
