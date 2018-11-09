@@ -1,6 +1,6 @@
 <template>
     <div>
-        <home-header v-model="info.city"></home-header>
+        <home-header></home-header>
         <home-swiper v-model="info.swiper"></home-swiper>
         <home-icons v-model="info.icons"></home-icons>
         <home-recommend v-model="info.recommend"></home-recommend>
@@ -27,7 +27,6 @@
         data () {
             return {
                 info: {
-                    city: '',
                     swiper: [],
                     icons: [],
                     recommend: [],
@@ -42,7 +41,6 @@
             getHomeInfo () {
                 this.$axios.get('/api/home').then((res) => {
                     let _data = res.data.data.data
-                    this.info.city = _data.city
                     this.info.swiper = _data.swiperList
                     this.info.icons = _data.iconList
                     this.info.recommend = _data.recommendList

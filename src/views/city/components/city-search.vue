@@ -9,7 +9,8 @@
             <ul>
                 <li class="search-item border-bottom"
                     v-for="item of list"
-                    :key="item.id">
+                    :key="item.id"
+                    @click="handleCityClick(item.name)">
                     {{item.name}}
                 </li>
                 <li class="search-item border-bottom" v-show="show">
@@ -57,6 +58,10 @@
             },
             show () {
                 return !this.list.length
+            },
+            handleCityClick (city) {
+                this.$store.commit('changeCity', city)
+                this.$router.push('/')
             }
         },
         watch: {

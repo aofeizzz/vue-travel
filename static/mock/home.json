@@ -1,7 +1,6 @@
 {
-    "ret": true,
-    "data"  : {
-        "city"         : "深圳",
+    "ret" : true,
+    "data": {
         "swiperList"   : [
             {
                 "id" : "0001",

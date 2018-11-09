@@ -5,7 +5,7 @@
                 <div class="title border-topbottom">当前位置</div>
                 <div class="button-list">
                     <div class="button-wrapper">
-                        <div class="button">深圳</div>
+                        <div class="button">{{this.$store.state.city}}</div>
                     </div>
                 </div>
             </div>
@@ -14,7 +14,8 @@
                 <div class="button-list">
                     <div class="button-wrapper"
                          v-for="item of publicValue"
-                         :key="item.id">
+                         :key="item.id"
+                         @click="handleCityClick(item.name)">
                         <div class="button">{{item.name}}</div>
                     </div>
                 </div>
@@ -26,7 +27,8 @@
                 <div class="title border-topbottom">{{key}}</div>
                 <div class="item-list"
                      v-for="item of items"
-                     :key="item.id">
+                     :key="item.id"
+                     @click="handleCityClick(item.name)">
                     <div class="item border-bottom">{{item.name}}</div>
                 </div>
             </div>
@@ -58,6 +60,12 @@
         },
         mounted () {
             this.scroll = new Bscroll(this.$refs.wrapper)
+        },
+        methods: {
+            handleCityClick (city) {
+                this.$store.commit('changeCity', city)
+                this.$router.push('/')
+            }
         },
         watch: {
             value (val) {
