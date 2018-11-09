@@ -2,8 +2,8 @@
     <div>
         <city-header></city-header>
         <city-search></city-search>
-        <city-list></city-list>
-        <city-alphabet></city-alphabet>
+        <city-list v-model="info.hotCities" :cities="info.cities"></city-list>
+        <city-alphabet v-model="info.cities"></city-alphabet>
     </div>
 </template>
 
@@ -20,6 +20,30 @@
             CityList,
             CitySearch,
             CityHeader
+        },
+        data () {
+            return {
+                info: {
+                    hotCities: [],
+                    cities: {}
+                }
+            }
+        },
+        mounted () {
+            this.getCityInfo()
+        },
+        methods: {
+            getCityInfo () {
+                this.$axios.get('/api/city').then((res) => {
+                    let _data = res.data.data.data
+                    this.info.cities = _data.cities
+                    this.info.hotCities = _data.hotCities
+                }).catch((res) => {
+                    console.log(res)
+                }).finally(() => {
+                    console.log(this.info)
+                })
+            }
         }
     }
 </script>

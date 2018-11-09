@@ -1,5 +1,5 @@
 {
-    "status": 0,
+    "ret": true,
     "data"  : {
         "city"         : "深圳",
         "swiperList"   : [

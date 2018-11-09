@@ -2,6 +2,7 @@
 const express = require('express')
 const app = express()
 const homeInfo = require('./static/mock/home.json')
+const cityInfo = require('./static/mock/city.json')
 const apiRoutes = express.Router()
 app.use('/api', apiRoutes)
 
@@ -55,6 +56,13 @@ module.exports = {
                     // 这里是你的json内容
                     errno: 0,
                     data: homeInfo
+                })
+            })
+            app.get('/api/city', (req, res) => {
+                res.json({
+                    // 这里是你的json内容
+                    errno: 0,
+                    data: cityInfo
                 })
             })
         },
