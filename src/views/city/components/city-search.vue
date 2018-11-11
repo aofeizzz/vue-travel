@@ -22,7 +22,8 @@
 </template>
 
 <script>
-    import Bscroll from 'better-scroll' // 重点解决移动端（现已支持 PC 端）各种滚动场景需求
+    import Bscroll          from 'better-scroll' // 重点解决移动端（现已支持 PC 端）各种滚动场景需求
+    import { mapMutations } from 'vuex'
 
     export default {
         name: 'city-search',
@@ -38,6 +39,11 @@
                 list: [],
                 timer: null,
                 start: new Date()
+            }
+        },
+        computed: {
+            show () {
+                return !this.list.length
             }
         },
         mounted () {
@@ -56,13 +62,11 @@
                 }
                 return result
             },
-            show () {
-                return !this.list.length
-            },
             handleCityClick (city) {
-                this.$store.commit('changeCity', city)
+                this.changeCity(city)
                 this.$router.push('/')
-            }
+            },
+            ...mapMutations(['changeCity'])
         },
         watch: {
             keyword () {
@@ -82,6 +86,7 @@
                         this.list = this.filterData()
                     }, 100)
                 }
+                console.log(this.list, !this.list.length)
             }
         }
     }

@@ -11,6 +11,7 @@ export default new Router({
             path: '/',
             name: 'home',
             meta: {title: '首页'},
+            // 懒加载写法
             component: resolve => {
                 require(['../views/home/Home.vue'], resolve)
             }

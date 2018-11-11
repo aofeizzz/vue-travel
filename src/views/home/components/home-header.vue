@@ -7,14 +7,19 @@
             <span class="iconfont">&#xe632;</span> 输入城市/景点/游玩主题
         </div>
         <div class="header-right" @click="goto('/city')">
-            {{this.$store.state.city}} <span class="iconfont">&#xe6aa;</span>
+            {{this.city}} <span class="iconfont">&#xe6aa;</span>
         </div>
     </div>
 </template>
 
 <script>
+    import { mapState } from 'vuex'
+
     export default {
         name: 'home-header',
+        computed: {
+            ...mapState(['city'])
+        },
         methods: {
             goto (name) {
                 this.$router.push(name)
@@ -59,7 +64,8 @@
             color: #ccc
             border-radius: .1rem
         .header-right
-            width: 1.24rem
+            min-width: 1.04rem
+            padding: 0 0.1rem
             float: right
             text-align: center
             color: #fff
