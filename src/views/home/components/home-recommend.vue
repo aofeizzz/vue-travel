@@ -2,7 +2,10 @@
     <div>
         <div class="recommend">热销推荐</div>
         <ul>
-            <li class="item border-bottom" v-for="item of publicValue" :key="item.id">
+            <li class="item border-bottom"
+                v-for="item of publicValue"
+                :key="item.id"
+                @click="goto(item.id)">
                 <img class="item-img" :src="item.img"/>
                 <div class="item-info">
                     <p class="item-title">{{item.title}}</p>
@@ -26,6 +29,11 @@
         data () {
             return {
                 publicValue: this.value
+            }
+        },
+        methods: {
+            goto (id) {
+                this.$router.push('/detail/' + id)
             }
         },
         watch: {

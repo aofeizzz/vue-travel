@@ -2,7 +2,10 @@
     <div>
         <div class="weekend">周末去哪儿</div>
         <ul>
-            <li class="item border-bottom" v-for="item of publicValue" :key="item.id">
+            <li class="item border-bottom"
+                v-for="item of publicValue"
+                :key="item.id"
+                @click="goto(item.id)">
                 <div class="item-img-wrapper">
                     <img class="item-img" :src="item.img"/>
                 </div>
@@ -27,6 +30,11 @@
         data () {
             return {
                 publicValue: this.value
+            }
+        },
+        methods: {
+            goto (id) {
+                this.$router.push('/detail/' + id)
             }
         },
         watch: {

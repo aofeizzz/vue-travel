@@ -21,7 +21,15 @@ export default new Router({
             name: 'city',
             meta: {title: '选择城市'},
             component: resolve => {
-                require(['../views/city/city.vue'], resolve)
+                require(['../views/city/index.vue'], resolve)
+            }
+        },
+        {
+            path: '/detail/:id',
+            name: 'detail',
+            meta: {title: '详情'},
+            component: resolve => {
+                require(['../views/detail/index.vue'], resolve)
             }
         }
     ]
