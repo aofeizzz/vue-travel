@@ -1,0 +1,76 @@
+{
+    "ret" : true,
+    "data": {
+        "sightName"   : "深圳欢乐谷(AAAAA景区)",
+        "bannerImg"   : "http://img1.qunarzz.com/sight/p0/1412/b5/c99be07b7b79cfb5900e03a35bc3051f.water.jpg_600x330_e1187eb8.jpg",
+        "gallaryImgs" : [
+            "http://img1.qunarzz.com/sight/p0/1412/b5/c99be07b7b79cfb5900e03a35bc3051f.water.jpg_r_800x800_454faea8.jpg",
+            "http://img1.qunarzz.com/sight/p0/1807/33/3359ac3a4bdd2b30a3.water.jpg_r_800x800_735422fe.jpg",
+            "http://img1.qunarzz.com/sight/p0/1412/6c/6f771be863fc45f43cdb313964830e44.water.jpg_r_800x800_0f5e9e7e.jpg",
+            "http://img1.qunarzz.com/sight/p0/1412/45/84c84189db3e8951465ae239cfc0b28e.water.jpg_r_800x800_e2e1d9ca.jpg",
+            "http://img1.qunarzz.com/sight/p0/1412/42/ab493fd01bc3d2b2b0874fe0b0ae5540.water.jpg_r_800x800_b0342038.jpg",
+            "http://img1.qunarzz.com/sight/p0/1412/4b/632fe62f622b9b112cdf9f3b80ce8f78.water.jpg_r_800x800_a387b255.jpg"
+        ],
+        "categoryList": [
+            {
+                "title"   : "成人票",
+                "children": [
+                    {
+                        "title": "日夜场通玩票"
+                    },
+                    {
+                        "title": "夜场票"
+                    }
+                ]
+            },
+            {
+                "title"   : "优惠人群票",
+                "children": [
+                    {
+                        "title": "外省优惠票"
+                    },
+                    {
+                        "title": "儿童票"
+                    },
+                    {
+                        "title": "长者票"
+                    },
+                    {
+                        "title": "大学生票"
+                    },
+                    {
+                        "title": "生日优惠票"
+                    },
+                    {
+                        "title": "生日随行人优惠票"
+                    }
+                ]
+            },
+            {
+                "title"   : "年卡",
+                "children": [
+                    {
+                        "title": "成人半年卡"
+                    },
+                    {
+                        "title": "老人/儿童半年卡"
+                    },
+                    {
+                        "title": "成人年卡"
+                    },
+                    {
+                        "title": "老人/儿童年卡"
+                    }
+                ]
+            },
+            {
+                "title"   : "团队票",
+                "children": [
+                    {
+                        "title": "学生团队票（10人起订）"
+                    }
+                ]
+            }
+        ]
+    }
+}

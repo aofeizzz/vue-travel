@@ -1,15 +1,15 @@
 <template>
     <div>
         <div class="banner" @click="handleBannerClick">
-            <img class="banner-img" src="//img1.qunarzz.com/sight/p0/1412/b5/c99be07b7b79cfb5900e03a35bc3051f.water.jpg_600x330_e1187eb8.jpg"/>
+            <img class="banner-img" :src="publicValue.bannerImg"/>
             <div class="banner-info">
-                <div class="banner-tittle">深圳欢乐谷(AAAAA景区)</div>
+                <div class="banner-tittle">{{publicValue.sightName}}</div>
                 <div class="banner-number">
-                    <span class="iconfont banner-icon">&#xe7b3;</span> {{this.imgs.length}}
+                    <span class="iconfont banner-icon">&#xe7b3;</span> {{publicValue.galleryImgs.length}}
                 </div>
             </div>
         </div>
-        <gallery v-model="imgs"
+        <gallery v-model="publicValue.galleryImgs"
                  v-show="showGallery"
                  @close="handleGalleryClose">
         
@@ -23,14 +23,16 @@
     export default {
         name: 'detail-banner',
         components: {Gallery},
+        props: {
+            value: {
+                type: Object,
+                required: true
+            }
+        },
         data () {
             return {
                 showGallery: false,
-                imgs: [
-                    'http://img1.qunarzz.com/sight/p0/1412/b5/c99be07b7b79cfb5900e03a35bc3051f.water.jpg_r_800x800_454faea8.jpg',
-                    'http://img1.qunarzz.com/sight/p0/1807/33/3359ac3a4bdd2b30a3.water.jpg_r_800x800_735422fe.jpg',
-                    'http://img1.qunarzz.com/sight/p0/1412/6c/6f771be863fc45f43cdb313964830e44.water.jpg_r_800x800_0f5e9e7e.jpg'
-                ]
+                publicValue: this.value
             }
         },
         methods: {
@@ -39,6 +41,11 @@
             },
             handleGalleryClose () {
                 this.showGallery = false
+            }
+        },
+        watch: {
+            value (val) {
+                this.publicValue = val
             }
         }
 
