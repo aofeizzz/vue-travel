@@ -9,20 +9,26 @@
                 </div>
             </div>
         </div>
-        <gallery v-model="publicValue.galleryImgs"
-                 v-show="showGallery"
-                 @close="handleGalleryClose">
-        
-        </gallery>
+        <fade-animation>
+            <gallery v-model="publicValue.galleryImgs"
+                     v-show="showGallery"
+                     @close="handleGalleryClose">
+            
+            </gallery>
+        </fade-animation>
     </div>
 </template>
 
 <script>
-    import Gallery from '@/components/gallery/index'
+    import Gallery       from '@/components/gallery/index'
+    import FadeAnimation from '@/components/fade/index'
 
     export default {
         name: 'detail-banner',
-        components: {Gallery},
+        components: {
+            FadeAnimation,
+            Gallery
+        },
         props: {
             value: {
                 type: Object,
