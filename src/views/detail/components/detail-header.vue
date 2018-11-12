@@ -43,7 +43,12 @@
             }
         },
         activated () {
+            // 对全局对象事件绑定，如果不解绑，会在全局其他页面执行handleScroll方法，影响到全局
             window.addEventListener('scroll', this.handleScroll)
+        },
+        deactivated () {
+            // 对全局事件解绑
+            window.removeEventListener('scroll', this.handleScroll)
         }
     }
 </script>
