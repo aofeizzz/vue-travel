@@ -12,25 +12,19 @@ export default new Router({
             name: 'home',
             meta: {title: '首页'},
             // 懒加载写法
-            component: resolve => {
-                require(['../views/home/Home.vue'], resolve)
-            }
+            component: () => import('../views/home/Home.vue')
         },
         {
             path: '/city',
             name: 'city',
             meta: {title: '选择城市'},
-            component: resolve => {
-                require(['../views/city/index.vue'], resolve)
-            }
+            component: () => import('../views/city/index.vue')
         },
         {
             path: '/detail/:id',
             name: 'detail',
             meta: {title: '详情'},
-            component: resolve => {
-                require(['../views/detail/index.vue'], resolve)
-            }
+            component: () => import('../views/detail/index.vue')
         }
     ],
     scrollBehavior () {
